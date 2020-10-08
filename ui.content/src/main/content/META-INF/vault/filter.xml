@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/muzik" mode="merge"/>
+    <filter root="/content/muzik" mode="merge"/>
+    <filter root="/content/dam/muzik" mode="merge"/>
+    <filter root="/content/experience-fragments/muzik" mode="merge"/>
+</workspaceFilter>

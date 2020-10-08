@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/muzik/clientlibs"/>
+    <filter root="/apps/muzik/components"/>
+    <filter root="/apps/muzik/i18n"/>
+</workspaceFilter>
