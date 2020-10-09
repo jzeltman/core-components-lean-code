@@ -1,0 +1,9 @@
+.cmp-image {}
+
+.cmp-image__link {
+    @apply flex;
+}
+
+.cmp-image__image {}
+
+.cmp-image__title {}

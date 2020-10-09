@@ -1,0 +1,44 @@
+.cmp-search {
+    @apply h-full;
+}
+
+.cmp-search__form {
+    @apply h-full flex justify-center items-center mx-2;
+}
+
+.cmp-search__field {
+    @apply w-8 h-8;
+}
+
+.cmp-search__icon {
+    background-image: svg-load('../resources/images/icons/search.svg', stroke=#fff);
+}
+
+.cmp-search__input {
+    @apply bg-transparent w-8 h-8 p-0 m-0 rounded transition-all duration-150;
+    &::placeholder {
+        @apply text-transparent;
+    }
+    &:focus {
+        @apply p-4 w-64;
+        &::placeholder {
+            @apply text-gray-100;
+        }
+    }
+}
+
+.cmp-search__loading-indicator {}
+
+.cmp-search__clear {}
+
+.cmp-search__clear-icon {}
+
+.cmp-search__results {}
+
+.cmp-search__item {}
+
+.cmp-search__item--is-focused {}
+
+.cmp-search__item-mark {}
+
+.cmp-search__item-title {}

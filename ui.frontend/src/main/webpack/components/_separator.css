@@ -1,0 +1,7 @@
+.cmp-separator {
+    @apply my-4;
+}
+
+.cmp-separator__horizontal-rule {
+    @apply border-t border-gray-200;
+}

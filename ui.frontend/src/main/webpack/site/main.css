@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import './_base.css';
+@import './_icons.css';
+@import './styles/container_main.css';
+@import './styles/experiencefragment_footer.css';
+@import './styles/experiencefragment_header.css';
+@import '../components/components.css';

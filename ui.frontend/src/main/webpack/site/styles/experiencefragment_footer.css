@@ -1,0 +1,11 @@
+/* XF Footer style, used on page template */
+
+footer.experiencefragment {
+    .cmp-text {
+        @apply text-gray-200 m-4 mt-0;
+    }
+}
+
+.cmp-experiencefragment--footer {
+    @apply bg-gray-900;
+}
