@@ -1,0 +1,34 @@
+@layer components {
+    .cmp-carousel {
+        .cmp-teaser {
+            @apply relative;
+        }
+        .cmp-teaser__image {}
+        .cmp-teaser__content {
+            @apply absolute inset-0 flex justify-center flex-col mx-auto;
+            width: clamp(90%, 100%, 1000px);
+            @screen lg {
+                width: 1000px;
+            }
+        }
+        .cmp-teaser__pretitle {}
+        .cmp-teaser__title {
+            @apply text-h1 uppercase w-1/2;
+        }
+        .cmp-teaser__title-link {
+            @apply w-1/2;
+        }
+        .cmp-teaser__description {
+            @apply py-4 w-1/2;
+        }
+        .cmp-teaser__action-container {
+            @apply py-4 w-1/2;
+        }
+        .cmp-teaser__action-link {
+            @extend %button-primary;
+        }
+        .\--teaser-right .cmp-teaser__content {
+            @apply items-end;
+        }
+    }
+}

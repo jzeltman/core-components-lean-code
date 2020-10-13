@@ -1,18 +1,30 @@
-.cmp-button {
-    @apply m-0 p-2 px-4 rounded-md font-bold;
-}
-
-.cmp-button__text {
-    @apply uppercase text-sm;
-}
-
-.cmp-button__icon {}
-
-//.cmp-button__icon--myIcon {}
-.\--outline .cmp-button {
-    @apply border border-white;
-}
-
-.\--primary .cmp-button {
-    @apply border-2 border-gray-900 bg-indigo-700;
+@layer components {
+    %button {
+        @apply m-0 p-2 px-4 rounded-md font-bold;
+        &:focus {
+            @apply border-black;
+        }
+    }
+    %button-primary {
+        @extend %button;
+        @apply border-2 border-transparent bg-indigo;
+    }
+    %button-outline {
+        @extend %button;
+        @apply border border-white;
+    }
+    .cmp-button {
+        @extend %button;
+    }
+    .cmp-button__text {
+        @apply uppercase text-sm;
+    }
+    .cmp-button__icon {}
+    .cmp-button__icon--myIcon {}
+    .\--outline .cmp-button {
+        @extend %button-primary;
+    }
+    .\--primary .cmp-button {
+        @extend %button-primary;
+    }
 }

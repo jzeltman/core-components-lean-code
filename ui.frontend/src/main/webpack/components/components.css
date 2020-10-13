@@ -1,7 +1,7 @@
 @import './_accordion.css';
 @import './_breadcrumb.css';
 @import './_button.css';
-@import './_carousel.css';
+@import './carousel/carousel.css';
 @import './_container.css';
 @import './_contentfragment.css';
 @import './_contentfragmentlist.css';
