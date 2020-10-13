@@ -1,0 +1,27 @@
+%button {
+    @apply my-4 mx-0 p-2 px-4 rounded-md font-bold inline-block;
+    &:focus {
+        @apply border-black;
+    }
+}
+
+%button-primary {
+    @extend %button;
+    @apply border-2 border-transparent bg-indigo;
+}
+
+%button-outline {
+    @extend %button;
+    @apply border border-white;
+}
+
+@layer components {
+    .cmp-button {
+        @extend %button;
+    }
+    .cmp-button__text {
+        @apply uppercase text-sm;
+    }
+    .cmp-button__icon {}
+    .cmp-button__icon--myIcon {}
+}

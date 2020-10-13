@@ -5,10 +5,9 @@
         }
         .cmp-teaser__image {}
         .cmp-teaser__content {
-            @apply absolute inset-0 flex justify-center flex-col mx-auto;
-            width: clamp(90%, 100%, 1000px);
+            @apply absolute inset-0 flex justify-center flex-col mx-auto w-grid;
             @screen lg {
-                width: 1000px;
+                @apply w-1000;
             }
         }
         .cmp-teaser__pretitle {}
@@ -22,7 +21,7 @@
             @apply py-4 w-1/2;
         }
         .cmp-teaser__action-container {
-            @apply py-4 w-1/2;
+            @apply w-1/2;
         }
         .cmp-teaser__action-link {
             @extend %button-primary;

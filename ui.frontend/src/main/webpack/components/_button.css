@@ -21,10 +21,10 @@
     }
     .cmp-button__icon {}
     .cmp-button__icon--myIcon {}
-    .\--outline .cmp-button {
+    .\--button-outline .cmp-button {
         @extend %button-primary;
     }
-    .\--primary .cmp-button {
+    .\--button-primary .cmp-button {
         @extend %button-primary;
     }
 }

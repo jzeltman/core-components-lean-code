@@ -1,8 +1,8 @@
 @import './_accordion.css';
 @import './_breadcrumb.css';
-@import './_button.css';
+@import './button/button.css';
 @import './carousel/carousel.css';
-@import './_container.css';
+@import './container/container.css';
 @import './_contentfragment.css';
 @import './_contentfragmentlist.css';
 @import './_download.css';
@@ -22,6 +22,6 @@
 @import './_search.css';
 @import './_separator.css';
 @import './_tabs.css';
-@import './_teaser.css';
+@import './teaser/teaser.css';
 @import './_text.css';
 @import './_title.css';

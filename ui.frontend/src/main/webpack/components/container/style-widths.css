@@ -1,0 +1,6 @@
+.\--w-grid.container .cmp-container {
+    @apply w-grid mx-auto;
+    @screen lg {
+        @apply w-1000;
+    }
+}

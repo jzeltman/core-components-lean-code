@@ -1,0 +1,7 @@
+.\--button-outline .cmp-button {
+    @extend %button-primary;
+}
+
+.\--button-primary .cmp-button {
+    @extend %button-primary;
+}

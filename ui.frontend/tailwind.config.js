@@ -27,7 +27,10 @@ module.exports = {
                 },
                 indigo: '#3C55F0',
             },
-
+            width: {
+                1000: '1000px',
+                grid: 'clamp(90%, 100%, 1000px)',
+            },
         },
     },
     variants: {},
