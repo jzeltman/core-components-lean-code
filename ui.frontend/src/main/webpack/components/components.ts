@@ -1,0 +1,1 @@
+import './teaser/style/card.ts';

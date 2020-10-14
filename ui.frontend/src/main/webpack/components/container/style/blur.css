@@ -1,0 +1,4 @@
+.\--container-bg-blur .cmp-container {
+    @apply bg-contain overflow-hidden;
+    filter: blur(10px);
+}

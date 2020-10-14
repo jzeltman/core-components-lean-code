@@ -1,2 +1,3 @@
 @import './base.css';
-@import './style-widths.css';
+@import './style/blur.css';
+@import './style/widths.css';

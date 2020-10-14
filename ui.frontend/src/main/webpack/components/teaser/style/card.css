@@ -1,0 +1,27 @@
+@layer components {
+    .teaser.\--teaser-card {
+        &+.teaser.\--teaser-card {
+            @apply pl-4;
+        }
+        .cmp-teaser {
+            @apply relative overflow-hidden;
+            &:after {
+                @apply w-full h-full absolute inset-0 bg-contain block;
+                z-index: -1;
+                filter: blur(1rem);
+            }
+        }
+        .cmp-teaser__image {}
+        .cmp-teaser__content {
+            @apply p-4;
+            bottom: 0;
+            /* filter: blur(10px); */
+        }
+        .cmp-teaser__pretitle {}
+        .cmp-teaser__title {}
+        .cmp-teaser__title-link {}
+        .cmp-teaser__description {}
+        .cmp-teaser__action-container {}
+        .cmp-teaser__action-link {}
+    }
+}

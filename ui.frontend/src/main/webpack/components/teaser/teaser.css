@@ -1,3 +1,6 @@
 @import './base.css';
-@import './style-carousel.css';
-@import './style-featured.css';
+@import './style/card.css';
+@import './style/carousel.css';
+@import './style/featured.css';
+@import './style/featured-w-bg.css';
+@import './style/outline.css';
