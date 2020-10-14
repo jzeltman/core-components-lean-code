@@ -1,13 +1,13 @@
-module.exports =  {
-    parser:  '@typescript-eslint/parser',  // Specifies the ESLint parser
-    extends:  [
-      'plugin:@typescript-eslint/recommended',  // Uses the recommended rules from the @typescript-eslint/eslint-plugin
+module.exports = {
+    parser: '@typescript-eslint/parser', // Specifies the ESLint parser
+    extends: [
+        'plugin:@typescript-eslint/recommended', // Uses the recommended rules from the @typescript-eslint/eslint-plugin
     ],
-    parserOptions:  {
-      ecmaVersion:  2018,  // Allows for the parsing of modern ECMAScript features
-      sourceType:  'module',  // Allows for the use of imports
+    parserOptions: {
+        ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
+        sourceType: 'module', // Allows for the use of imports
     },
-    rules:  {
+    rules: {
         "curly": 1,
         "@typescript-eslint/explicit-function-return-type": [0],
         "@typescript-eslint/no-explicit-any": [0],
@@ -19,8 +19,8 @@ module.exports =  {
         "no-cond-assign": 1,
         "no-trailing-spaces": 0,
         "eol-last": 1,
-        "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+        "func-style": ["error", "expression", { "allowArrowFunctions": true }],
         "semi": 1,
         "no-var": 0
     },
-  };
+};
