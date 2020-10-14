@@ -13,7 +13,7 @@
         "js": "tsc",
         "css": "postcss src/main/webpack/site/main.css -o dist/clientlib-site/site.css",
         "css:watch": "postcss src/main/webpack/site/main.css -o dist/clientlib-site/site.css -w",
-        "dev": "concurrently \"npm run css:watch\" \"watch clientlib ./dist\" \"npm run sync:watch\"",
+        "dev": "concurrently \"webpack -w -d --env dev --config ./webpack.dev.js\" \"npm run sync:watch\"",
         "devv": "webpack -d --env dev --config ./webpack.dev.js && clientlib --verbose",
         "prod": "concurrently \"npm run css\" \"clientlib --verbose\"",
         "prodd": "webpack -p --config ./webpack.prod.js && clientlib --verbose",

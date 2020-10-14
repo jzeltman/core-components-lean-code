@@ -1,1 +1,2 @@
-import '../components/components.ts';
+import './main.css';
+import '../components/components';
