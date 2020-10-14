@@ -19,7 +19,7 @@ module.exports = {
         "no-cond-assign": 1,
         "no-trailing-spaces": 0,
         "eol-last": 1,
-        "func-style": ["error", "expression", { "allowArrowFunctions": true }],
+        // "func-style": ["error", "expression", { "allowArrowFunctions": true }],
         "semi": 1,
         "no-var": 0
     },

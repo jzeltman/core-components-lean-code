@@ -4,16 +4,11 @@
             @apply pl-4;
         }
         .cmp-teaser {
-            @apply relative overflow-hidden;
-            &:after {
-                @apply w-full h-full absolute inset-0 bg-contain block;
-                z-index: -1;
-                filter: blur(1rem);
-            }
+            @apply relative overflow-hidden shadow-xl;
         }
         .cmp-teaser__image {}
         .cmp-teaser__content {
-            @apply p-4;
+            @apply px-4 py-6;
             bottom: 0;
             /* filter: blur(10px); */
         }
@@ -23,5 +18,10 @@
         .cmp-teaser__description {}
         .cmp-teaser__action-container {}
         .cmp-teaser__action-link {}
+        .cmp-teaser--bg-blur {
+            @apply w-full h-full absolute inset-0 bg-contain block opacity-50;
+            z-index: -1;
+            filter: blur(1rem);
+        }
     }
 }
