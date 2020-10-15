@@ -1,0 +1,26 @@
+@layer components {
+    .\--teaser-featured-w-bg {
+        .cmp-teaser {
+            @apply flex mx-auto my-12 w-grid;
+            @screen lg {
+                @apply w-1000;
+            }
+        }
+        .cmp-teaser__image {
+            @apply w-1/2 order-2;
+        }
+        .cmp-teaser__content {
+            @apply w-1/2 flex justify-center flex-col p-12 order-1;
+        }
+        .cmp-teaser__pretitle {
+            @apply uppercase;
+        }
+        .cmp-teaser__title {
+            @apply uppercase text-h2 py-4;
+        }
+        .cmp-teaser__title-link {}
+        .cmp-teaser__description {}
+        .cmp-teaser__action-container {}
+        .cmp-teaser__action-link {}
+    }
+}

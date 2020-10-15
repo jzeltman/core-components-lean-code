@@ -1,0 +1,20 @@
+.cmp-breadcrumb {
+    @apply p-6 pb-4;
+}
+
+.cmp-breadcrumb__list {}
+
+.cmp-breadcrumb__item {
+    @apply mr-4;
+}
+
+.cmp-breadcrumb__item--active {
+    @apply font-bold;
+}
+
+.cmp-breadcrumb__item-link {
+    @apply underline;
+    &:hover {
+        @apply no-underline;
+    }
+}

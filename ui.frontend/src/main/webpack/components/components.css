@@ -1,5 +1,5 @@
 @import './_accordion.css';
-@import './_breadcrumb.css';
+@import './breadcrumb/breadcrumb.css';
 @import './button/button.css';
 @import './carousel/carousel.css';
 @import './container/container.css';

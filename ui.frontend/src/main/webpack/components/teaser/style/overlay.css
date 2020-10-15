@@ -1,5 +1,5 @@
 @layer components {
-    .cmp-carousel {
+    .\--teaser-overlay {
         .cmp-teaser {
             @apply relative;
         }
