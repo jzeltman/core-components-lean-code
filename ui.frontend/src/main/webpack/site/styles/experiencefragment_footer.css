@@ -1,11 +1,20 @@
 /* XF Footer style, used on page template */
 
-footer.experiencefragment {
-    .cmp-text {
-        @apply text-gray-200 m-4 mt-0;
-    }
-}
+footer.experiencefragment {}
 
 .cmp-experiencefragment--footer {
     @apply bg-gray-900;
+    .cmp-text,
+    .aem-GridColumn--default--12>.cmp-container {
+        @apply w-grid mx-auto;
+        @screen lg {
+            @apply w-1000;
+        }
+    }
+    .cmp-text {
+        @apply text-gray-200 mb-4;
+    }
+    .aem-GridColumn--default--12>.cmp-container {
+        @apply mt-12 mb-8;
+    }
 }
