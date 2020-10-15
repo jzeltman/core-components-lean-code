@@ -1,0 +1,27 @@
+@layer components {
+    .\--teaser-promo {
+        &+.\--teaser-promo {
+            @apply pl-4;
+        }
+        .cmp-teaser {}
+        .cmp-teaser__image {}
+        .cmp-teaser__content {
+            @apply flex flex-col;
+        }
+        .cmp-teaser__pretitle {
+            @apply uppercase font-bold text-xs order-2;
+        }
+        .cmp-teaser__title {
+            @apply text-h3 font-bold py-2 order-1;
+            &:after {
+                content: none;
+            }
+        }
+        .cmp-teaser__title-link {}
+        .cmp-teaser__description {
+            @apply order-3;
+        }
+        .cmp-teaser__action-container {}
+        .cmp-teaser__action-link {}
+    }
+}

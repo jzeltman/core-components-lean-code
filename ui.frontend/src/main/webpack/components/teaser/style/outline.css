@@ -1,26 +1,29 @@
 @layer components {
     .\--teaser-outline {
+        &+.\--teaser-outline {
+            @apply pl-4;
+        }
         .cmp-teaser {
-            @apply flex mx-auto my-12 w-grid;
-            @screen lg {
-                @apply w-1000;
-            }
+            @apply flex p-8 border border-indigo text-center rounded-lg;
         }
-        .cmp-teaser__image {
-            @apply w-1/3;
+        .cmp-teaser__image {}
+        .cmp-teaser__content {}
+        .cmp-teaser__pretitle {
+            @apply uppercase font-bold text-xs mt-8;
         }
-        .cmp-teaser__content {
-            @apply w-2/3 flex justify-center flex-col p-8;
-        }
-        .cmp-teaser__pretitle {}
         .cmp-teaser__title {
-            @apply uppercase text-h2;
+            @apply text-h3 font-bold pt-2 pb-6;
+            &:after {
+                content: none;
+            }
         }
         .cmp-teaser__title-link {}
         .cmp-teaser__description {
-            @apply my-8;
+            @apply mb-8;
         }
         .cmp-teaser__action-container {}
-        .cmp-teaser__action-link {}
+        .cmp-teaser__action-link {
+            @extend %button-tertiary;
+        }
     }
 }

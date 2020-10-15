@@ -6,13 +6,18 @@
 }
 
 %button-primary {
-    @extend %button;
-    @apply border-2 border-transparent bg-indigo;
+    @apply my-4 mx-0 p-2 px-4 rounded-md font-bold inline-block border-2 border-transparent bg-indigo;
 }
 
 %button-outline {
-    @extend %button;
-    @apply border border-white;
+    @apply my-4 mx-0 p-2 px-4 rounded-md font-bold inline-block border border-white;
+}
+
+%button-tertiary {
+    @apply my-4 mx-0 p-2 px-4 rounded-md font-bold inline-block border border-indigo bg-transparent text-indigo font-bold;
+    &:hover {
+        @apply shadow-focus;
+    }
 }
 
 @layer components {

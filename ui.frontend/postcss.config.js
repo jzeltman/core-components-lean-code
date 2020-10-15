@@ -5,7 +5,7 @@ module.exports = {
         require('autoprefixer'),
         require("postcss-each"),
         require("postcss-inline-svg"),
-        require('postcss-extend'),
         require('postcss-nested'),
+        require('postcss-extend'),
     ]
 }

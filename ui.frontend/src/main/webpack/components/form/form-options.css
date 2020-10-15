@@ -1,0 +1,61 @@
+.cmp-form-options {}
+
+.cmp-form-options__legend {}
+
+.cmp-form-options__field-label {}
+
+.cmp-form-options__field {}
+
+.cmp-form-options__field--checkbox {}
+
+.cmp-form-options--radio {
+    @apply flex flex-col;
+    .cmp-form-options__legend {
+        @apply uppercase mb-2 font-bold;
+    }
+    .cmp-form-options__field-label {
+        @apply my-2 grid gap-3 items-center;
+        grid-template-columns: min-content auto;
+    }
+}
+
+.cmp-form-options__field--radio {
+    @apply h-0 bg-transparent relative;
+    &:after {
+        @apply w-4 h-4 rounded-full border-2 border-white block absolute top-0 transform -translate-y-2;
+        content: "";
+    }
+    &:focus {
+        @apply shadow-none outline-none;
+        &::after {
+            @apply shadow-focus;
+        }
+    }
+    &:checked {
+        &:after {
+            background: radial-gradient(theme('colors.indigo') 50%, theme('colors.black') 51%);
+        }
+    }
+}
+
+.cmp-form-options__field-description {
+    @apply leading-none;
+}
+
+.cmp-form-options__field--drop-down {
+    @apply bg-transparent text-white border-2 border-white rounded-md p-2 w-full;
+    &:focus {
+        @apply shadow-focus outline-none;
+    }
+    option {
+        @apply text-black py-1;
+    }
+}
+
+.cmp-form-options__label {}
+
+.cmp-form-options__drop-down-field {}
+
+.cmp-form-options__multi-drop-down-field {}
+
+.cmp-form-options__help-message {}

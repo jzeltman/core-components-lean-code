@@ -1,0 +1,9 @@
+.cmp-form {
+    @apply mx-auto w-full px-4;
+    @screen md {
+        @apply w-1/2;
+    }
+    @screen lg {
+        @apply w-1/3;
+    }
+}

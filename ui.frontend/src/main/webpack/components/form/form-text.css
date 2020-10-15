@@ -1,0 +1,14 @@
+.cmp-form-text {
+    @apply my-4;
+}
+
+.cmp-form-text__help-block {}
+
+.cmp-form-text__textarea {}
+
+.cmp-form-text__text {
+    @apply bg-transparent text-white border-2 border-white rounded-md p-2 w-full;
+    &:focus {
+        @apply shadow-focus;
+    }
+}

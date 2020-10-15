@@ -1,0 +1,22 @@
+.cmp-tabs {
+    @apply py-8;
+}
+
+.cmp-tabs__tablist {
+    @apply mb-8;
+}
+
+.cmp-tabs__tab {
+    @apply uppercase my-4 ml-0 mr-12 p-2 px-4;
+    &:focus {
+        @apply shadow-focus outline-none;
+    }
+}
+
+.cmp-tabs__tab--active {
+    @extend %button-primary;
+}
+
+.cmp-tabs__tabpanel {}
+
+.cmp-tabs__tabpanel--active {}

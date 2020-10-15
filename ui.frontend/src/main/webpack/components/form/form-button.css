@@ -1,0 +1,8 @@
+.cmp-form-button {
+    @extend %button-primary;
+    @apply w-full;
+    &:hover,
+    &:focus {
+        @apply shadow-focus border-2 border-black;
+    }
+}

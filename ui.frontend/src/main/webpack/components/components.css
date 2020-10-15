@@ -8,10 +8,7 @@
 @import './_download.css';
 @import './_embed.css';
 @import './_experiencefragment.css';
-@import './_form-button.css';
-@import './_form-options.css';
-@import './_form-text.css';
-@import './_form.css';
+@import './form/form.css';
 @import './_helloworld.css';
 @import './_image.css';
 @import './_languagenavigation.css';
@@ -21,7 +18,7 @@
 @import './_progressbar.css';
 @import './_search.css';
 @import './_separator.css';
-@import './_tabs.css';
+@import './tabs/tabs.css';
 @import './teaser/teaser.css';
 @import './_text.css';
 @import './_title.css';

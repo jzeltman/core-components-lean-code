@@ -1,6 +1,6 @@
 @layer components {
     .teaser.\--teaser-card {
-        &+.teaser.\--teaser-card {
+        &+.\--teaser-card {
             @apply pl-4;
         }
         .cmp-teaser {
@@ -10,7 +10,6 @@
         .cmp-teaser__content {
             @apply px-4 py-6;
             bottom: 0;
-            /* filter: blur(10px); */
         }
         .cmp-teaser__pretitle {}
         .cmp-teaser__title {}
