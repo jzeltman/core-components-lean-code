@@ -1,5 +1,5 @@
 .cmp-form {
-    @apply mx-auto w-full px-4;
+    @apply mx-auto my-12 w-full px-4;
     @screen md {
         @apply w-1/2;
     }

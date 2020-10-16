@@ -42,8 +42,12 @@
     @apply leading-none;
 }
 
+.cmp-form-options--drop-down {
+    @apply my-4 mb-6;
+}
+
 .cmp-form-options__field--drop-down {
-    @apply bg-transparent text-white border-2 border-white rounded-md p-2 w-full;
+    @apply bg-transparent text-white font-bold border-2 border-white rounded-md p-2 w-full;
     &:focus {
         @apply shadow-focus outline-none;
     }
@@ -52,7 +56,9 @@
     }
 }
 
-.cmp-form-options__label {}
+.cmp-form-options__label {
+    @apply font-bold;
+}
 
 .cmp-form-options__drop-down-field {}
 

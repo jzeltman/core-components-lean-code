@@ -1,11 +1,23 @@
 .cmp-form-text {
-    @apply my-4;
+    @apply my-6 relative;
+    label {
+        @apply font-bold absolute transform transition-all duration-300;
+        top: .75rem;
+        left: .75rem;
+    }
+    &:focus-within {
+        label {
+            left: 0;
+            top: -1.75rem;
+        }
+    }
 }
 
 .cmp-form-text__help-block {}
 
 .cmp-form-text__textarea {}
 
+.cmp-form-text__text:-webkit-autofill,
 .cmp-form-text__text {
     @apply bg-transparent text-white border-2 border-white rounded-md p-2 w-full;
     &:focus {

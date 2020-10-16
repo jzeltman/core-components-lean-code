@@ -23,6 +23,11 @@ footer.experiencefragment {}
     .cmp-list__item {
         @apply py-2;
     }
+    .cmp-list__item-link {
+        &:hover {
+            @apply underline;
+        }
+    }
     .cmp-experiencefragment--social-icons {
         .cmp-container {
             @apply flex;

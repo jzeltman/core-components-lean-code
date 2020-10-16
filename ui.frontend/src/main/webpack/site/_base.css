@@ -71,4 +71,40 @@ input {
             left: 0;
         }
     }
+    .title.text-center {
+        h1,
+        h2,
+        h3,
+        .h1,
+        .h2,
+        .h3 {
+            @apply relative pb-8;
+            &:after {
+                @apply absolute w-32 h-1 bg-indigo mb-4 transform -translate-x-1/2;
+                content: "";
+                bottom: 0;
+                left: 50%;
+            }
+        }
+    }
+    .title.\--title-no-underline {
+        h1,
+        h2,
+        h3,
+        .h1,
+        .h2,
+        .h3 {
+            &::after {
+                content: none;
+            }
+        }
+    }
+    .title.capitalize {
+        h1,
+        h2,
+        .h1,
+        .h2 {
+            @apply capitalize;
+        }
+    }
 }

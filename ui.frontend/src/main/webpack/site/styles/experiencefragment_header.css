@@ -20,6 +20,12 @@ header.experiencefragment {
         }
         &__item-link {
             @apply px-8 py-2 uppercase text-sm font-bold rounded;
+            &:hover {
+                @apply underline;
+            }
+        }
+        &__item--active {
+            @apply underline;
         }
     }
     .search.expanded {
