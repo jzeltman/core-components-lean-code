@@ -1,0 +1,7 @@
+.cmp-backtotop {
+    @apply w-8 h-8 outline-none absolute block rounded-md bg-no-repeat bg-center top-0 right-0 mt-12 mr-8;
+    background-image: svg-load('../../resources/images/icons/backtotop.svg', stroke=#fff);
+    &:focus {
+        @apply shadow-focus;
+    }
+}

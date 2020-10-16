@@ -1,11 +1,13 @@
-import TeaserCard from './teaser/style/card';
+import BackToTop from './backtotop/backtotop';
 import LanguageNavigation from './languagenavigation/languagenavigation';
 import Search from './search/search';
+import TeaserCard from './teaser/style/card';
 
 const Components = [
-  TeaserCard,
+  BackToTop,
   LanguageNavigation,
-  Search
+  Search,
+  TeaserCard,
 ]
 
 export default Components;
