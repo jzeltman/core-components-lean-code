@@ -8,7 +8,6 @@ module.exports = {
         sourceType: 'module', // Allows for the use of imports
     },
     rules: {
-        "curly": 1,
         "@typescript-eslint/explicit-function-return-type": [0],
         "@typescript-eslint/no-explicit-any": [0],
         "ordered-imports": [0],
@@ -19,7 +18,6 @@ module.exports = {
         "no-cond-assign": 1,
         "no-trailing-spaces": 0,
         "eol-last": 1,
-        // "func-style": ["error", "expression", { "allowArrowFunctions": true }],
         "semi": 1,
         "no-var": 0
     },

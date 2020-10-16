@@ -5,12 +5,12 @@ export default {
     const navEl = headerEl.querySelector('.navigation');
     const buttonEl = headerEl.querySelector('.button');
 
-    const focusinHandler = (e) => {
+    const focusinHandler = () => {
       navEl.classList.add('hidden');
       buttonEl.classList.add('hidden');
       el.parentNode.classList.add('expanded');
     };
-    const focusoutHandler = (e) => {
+    const focusoutHandler = () => {
       navEl.classList.remove('hidden');
       buttonEl.classList.remove('hidden');
       el.parentNode.classList.remove('expanded');
