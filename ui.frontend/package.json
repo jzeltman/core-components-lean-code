@@ -43,7 +43,7 @@
         "mini-css-extract-plugin": "^0.4.4",
         "optimize-css-assets-webpack-plugin": "^5.0.1",
         "postcss-extend": "^1.0.5",
-        "postcss-loader": "^3.0.0",
+        "postcss-loader": "^4.0.4",
         "source-map-loader": "^0.2.4",
         "style-loader": "^0.14.1",
         "terser-webpack-plugin": "^1.4.1",

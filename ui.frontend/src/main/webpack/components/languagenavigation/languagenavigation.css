@@ -1,0 +1,60 @@
+.cmp-languagenavigation {
+    @apply h-full flex items-center relative;
+}
+
+.cmp-languagenavigation__toggle {
+    @apply w-8 h-8 block bg-no-repeat bg-center rounded-md;
+    background-image: svg-load('../../resources/images/icons/globe.svg', fill=#fff);
+}
+
+.cmp-languagenavigation>.cmp-languagenavigation__group {
+    @apply hidden bg-white bg-opacity-25 shadow-lg absolute transform w-56 mt-12 translate-y-1/2 right-0 z-10 rounded-md;
+    &.block {
+        @apply block;
+    }
+    &::after {
+        @apply absolute w-0 h-0;
+        top: -13px;
+        right: 9px;
+        border-style: solid;
+        border-width: 0 7px 13px 7px;
+        border-color: transparent transparent rgba(255, 255, 255, .25) transparent;
+        content: "";
+    }
+}
+
+.cmp-languagenavigation__item--level-1 {
+    &:hover {
+        @apply underline;
+    }
+}
+
+.cmp-languagenavigation__item--active {
+    .cmp-languagenavigation__item-title {
+        @apply font-bold;
+    }
+    .cmp-languagenavigation__item--active {
+        @apply underline;
+    }
+}
+
+.cmp-languagenavigation__item--level-0 {
+    @apply py-2 px-8;
+    &+.cmp-languagenavigation__item {
+        @apply border-t border-white;
+    }
+    .cmp-languagenavigation__group {
+        @apply flex;
+    }
+}
+
+.cmp-languagenavigation__item--level-1 {
+    @apply mr-2;
+    &+.cmp-languagenavigation__item--level-1 {
+        @apply border-l border-white pl-2;
+    }
+}
+
+.cmp-languagenavigation__item-link {}
+
+.cmp-languagenavigation__item-title {}

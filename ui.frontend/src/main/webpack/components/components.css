@@ -11,7 +11,7 @@
 @import './form/form.css';
 @import './_helloworld.css';
 @import './_image.css';
-@import './_languagenavigation.css';
+@import './languagenavigation/languagenavigation.css';
 @import './_list.css';
 @import './_navigation.css';
 @import './_pdfviewer.css';

@@ -2,10 +2,13 @@
 
 header.experiencefragment {
     .cmp-experiencefragment--header {
-        @apply p-4
+        @apply p-4 z-10;
     }
     .cmp-container {
         @apply flex;
+    }
+    .image {
+        @apply flex items-center;
     }
     .navigation {
         @apply flex-1;
@@ -44,38 +47,3 @@ header.experiencefragment {
         @apply mx-2;
     }
 }
-
-
-/* 
-    @media (prefers-color-scheme: dark) {}
-    a {
-        @media (prefers-color-scheme: dark) {}
-        &:hover, &:focus {
-            @media (prefers-color-scheme: dark) {}
-        }
-    }
-    .cmp-navigation__item--level-0 {
-        &>.cmp-navigation__group {}
-    }
-    .cmp-navigation__item-link {}
-    .cmp-navigation__item--active>.cmp-navigation__item-link {}
-    Language Navigation
-    .cmp-languagenavigation {
-        &::before {
-            @media (prefers-color-scheme: dark) {}
-        }
-        &>.cmp-languagenavigation__group {
-            @media (prefers-color-scheme: dark) {}
-        }
-        &:hover>.cmp-languagenavigation__group {}
-    }
-    .cmp-languagenavigation__group {}
-    .cmp-languagenavigation__item-title {}
-    .cmp-languagenavigation__item--level-0 {}
-    .cmp-languagenavigation__item--level-1 {}
-    .cmp-languagenavigation__item--level-1:not(:first-child)::before {}
-    .cmp-languagenavigation__item--active>.cmp-languagenavigation__item-link {}
-    Search
-    .cmp-search__field {}
-    .cmp-search__input {} 
-*/

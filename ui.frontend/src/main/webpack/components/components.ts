@@ -1,20 +1,9 @@
 import TeaserCard from './teaser/style/card';
+import LanguageNavigation from './languagenavigation/languagenavigation';
 
 const Components = [
-  TeaserCard
+  TeaserCard,
+  LanguageNavigation
 ]
 
-const onDocumentReady = () => {
-  Components.forEach(component => {
-    const elements = document.querySelectorAll(component.selector);
-    for (var i = 0; i < elements.length; i++) {
-      new component.init(elements[i]);
-    }
-  })
-}
-
-if (document.readyState !== "loading") {
-  onDocumentReady();
-} else {
-  document.addEventListener("DOMContentLoaded", onDocumentReady);
-}
+export default Components;
