@@ -1,3 +1,7 @@
 /* Container main content style, used on page template */
 
 main.container {}
+
+.container.\--main-behind-header {
+    @apply -mt-32 z-0;
+}

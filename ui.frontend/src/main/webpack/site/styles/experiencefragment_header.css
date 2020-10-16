@@ -39,7 +39,7 @@ header.experiencefragment {
                 @apply text-transparent;
             }
             &:focus {
-                @apply py-4 px-8 w-full;
+                @apply py-4 px-8 w-full bg-black bg-opacity-50;
                 &::placeholder {
                     @apply text-gray-100 italic;
                 }
@@ -60,5 +60,8 @@ header.experiencefragment {
         .cmp-button {
             @apply my-0;
         }
+    }
+    &.\--main-behind-header {
+        @apply relative z-10;
     }
 }
