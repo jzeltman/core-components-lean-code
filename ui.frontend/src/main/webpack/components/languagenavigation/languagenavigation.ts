@@ -8,7 +8,6 @@ export default {
 
     buttonToggleEl.classList.add('cmp-languagenavigation__toggle');
     buttonToggleEl.addEventListener('click', toggleList);
-    buttonToggleEl.addEventListener('keyup', toggleList);
 
     el.insertBefore(buttonToggleEl, languageListEl);
   }

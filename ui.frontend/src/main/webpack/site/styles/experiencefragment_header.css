@@ -46,4 +46,7 @@ header.experiencefragment {
     .cmp-languagenavigation {
         @apply mx-2;
     }
+    .cmp-button {
+        @extend %button-outline;
+    }
 }
