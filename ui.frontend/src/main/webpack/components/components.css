@@ -16,7 +16,7 @@
 @import './_navigation.css';
 @import './_pdfviewer.css';
 @import './_progressbar.css';
-@import './_search.css';
+@import './search/search.css';
 @import './_separator.css';
 @import './tabs/tabs.css';
 @import './teaser/teaser.css';

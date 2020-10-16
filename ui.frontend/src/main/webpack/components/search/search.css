@@ -11,7 +11,7 @@
 }
 
 .cmp-search__icon {
-    background-image: svg-load('../resources/images/icons/search.svg', stroke=#fff);
+    background-image: svg-load('../../resources/images/icons/search.svg', stroke=#fff);
 }
 
 .cmp-search__input {
