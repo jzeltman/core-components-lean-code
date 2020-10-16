@@ -26,7 +26,7 @@
         .cmp-teaser__action-link {
             @extend %button-primary;
         }
-        .\--teaser-right .cmp-teaser__content {
+        &.\--teaser-right .cmp-teaser__content {
             @apply items-end;
         }
     }
