@@ -17,4 +17,24 @@ footer.experiencefragment {}
     .aem-GridColumn--default--12>.cmp-container {
         @apply mt-12 mb-8;
     }
+    .cmp-title__text {
+        @apply font-bold uppercase mb-2;
+    }
+    .cmp-list__item {
+        @apply py-2;
+    }
+    .cmp-experiencefragment--social-icons {
+        .cmp-container {
+            @apply flex;
+        }
+        .image {
+            @apply mr-4;
+        }
+        .cmp-image__link {
+            @apply block rounded-md;
+        }
+        .cmp-image__image {
+            @apply object-contain w-6 h-6;
+        }
+    }
 }
