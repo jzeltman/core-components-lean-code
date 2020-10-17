@@ -39,7 +39,7 @@ const libsBaseConfig = {
 
 // Config for `aem-clientlib-generator`
 module.exports = {
-    context: CLIENTLIB_DIR,
+    context: BUILD_DIR,
     clientLibRoot: CLIENTLIB_DIR,
     libs: [{
             ...libsBaseConfig,

@@ -9,25 +9,25 @@ module.exports = merge(common, {
         minimize: true,
         minimizer: [
             new TerserPlugin(),
-            // new OptimizeCSSAssetsPlugin({
-            //     cssProcessorPluginOptions: {
-            //         cssProcessor: require('cssnano'),
-            //         preset: ['default', {
-            //             calc: true,
-            //             convertValues: true,
-            //             discardComments: {
-            //                 removeAll: true
-            //             },
-            //             discardDuplicates: true,
-            //             discardEmpty: true,
-            //             mergeRules: true,
-            //             normalizeCharset: true,
-            //             reduceInitial: true, // This is since IE11 does not support the value Initial
-            //             svgo: true
-            //         }],
-            //     },
-            //     canPrint: false
-            // })
+            new OptimizeCSSAssetsPlugin({
+                cssProcessorPluginOptions: {
+                    cssProcessor: require('cssnano'),
+                    preset: ['default', {
+                        calc: true,
+                        convertValues: true,
+                        discardComments: {
+                            removeAll: true
+                        },
+                        discardDuplicates: true,
+                        discardEmpty: true,
+                        mergeRules: true,
+                        normalizeCharset: true,
+                        reduceInitial: true, // This is since IE11 does not support the value Initial
+                        svgo: true
+                    }],
+                },
+                canPrint: false
+            })
         ],
         splitChunks: {
             cacheGroups: {

@@ -5,20 +5,9 @@ const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TSConfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const SOURCE_ROOT = __dirname + '/src/main/webpack';
-const CLIENTLIB_DIR = path.join(
-    __dirname,
-    '..',
-    'ui.apps',
-    'src',
-    'main',
-    'content',
-    'jcr_root',
-    'apps',
-    'muzik',
-    'clientlibs'
-);
 
 module.exports = {
     resolve: {
@@ -32,9 +21,9 @@ module.exports = {
     },
     output: {
         filename: (chunkData) => {
-            return chunkData.chunk.name === 'dependencies' ? 'clientlib-dependencies/js/[name].js' : 'clientlib-site/js/[name].js';
+            return chunkData.chunk.name === 'dependencies' ? 'clientlib-dependencies/[name].js' : 'clientlib-site/[name].js';
         },
-        path: path.resolve(CLIENTLIB_DIR)
+        path: path.resolve(__dirname, 'dist')
     },
     module: {
         rules: [{
@@ -69,9 +58,10 @@ module.exports = {
         ]
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
         new MiniCssExtractPlugin({
-            filename: 'clientlib-[name]/css/[name].css'
+            filename: 'clientlib-[name]/[name].css'
         }),
         new CopyWebpackPlugin([
             { from: path.resolve(__dirname, SOURCE_ROOT + '/resources'), to: './clientlib-site/resources' }

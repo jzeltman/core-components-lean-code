@@ -14,7 +14,7 @@
         "css": "postcss src/main/webpack/site/main.css -o dist/clientlib-site/site.css",
         "css:watch": "postcss src/main/webpack/site/main.css -o dist/clientlib-site/site.css -w",
         "dev": "concurrently \"webpack -w -d --env dev --config ./webpack.dev.js\" \"npm run sync:watch\"",
-        "prod": "webpack -p --env dev --config ./webpack.dev.js",
+        "prod": "webpack -p --config ./webpack.prod.js && clientlib --verbose",
         "prodd": "webpack -p --config ./webpack.prod.js",
         "start": "webpack-dev-server --open --config ./webpack.dev.js",
         "sync": "aemsync -d -p ../ui.apps/src/main/content",
