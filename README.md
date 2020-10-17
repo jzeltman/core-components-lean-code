@@ -17,7 +17,7 @@ I've included a content package with the pages recreated from the design, along 
     - `mvn clean install -PautoInstallSinglePackage`
         - While testing, there have been times when the ui.apps project doesn't get properly built installed while using the `mvn clean install -PautoInstallSinglePackage` build profile.
         - If this happens run the `mvn clean install -PautoInstallPackage` profile from ui.apps, then the clientlibs get run through properly.
-- Install content package using the package manager
+- Install content package - muzik.ui.content-1.0.0-SNAPSHOT - using the package manager
 
 ## Modules
 
