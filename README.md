@@ -1,6 +1,23 @@
-# Sample AEM project template
+# A little Tease...
 
-This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
+This submission for the lean code competition aims to show how much can be done with core components - from the perspective of a frontend developer who happens to be very familiar with AEM. This submission includes no custom Java or HTL code, but rather only CSS and JavaScript. As you'll see, there's much that can be done with core components and the style system. 
+
+I've called this submission 'A little Tease' as the Teaser component is heavily featured. After evaluating the provided design file, I mapped the design elements to the core components, and found that the teaser component could meet the requirements for many of the design patterns in the Adobe XD file. 
+
+The other innovation here is leveraging the popular and powerful TailwindCSS framework. Although Tailwind might seem antithetical to BEM styling due to it's focus on atomic utility classes, it's a perfect fit with BEM nomenclature. Tailwind's power packed PostCSS plugins enable us to enforce consistent styling across large projects by allowing us to utilize the PostCSS `@apply` rule and use all that Tailwind provides by default. Additionally Tailwind is perfect for use with AEM as it allows for multiple levels of configuration, which is great for multi-site AEM configurations.
+
+The Teaser component has 6 variants to cover many of the patterns on the site. The Container component is used throughout as well to provide width restrictions and spacing. The default header experience fragment was leveraged with one small difference - re-ordering the search and language components. The List component was used in the footer along with experience fragments to implement the design. 
+
+I've included a content package with the pages recreated from the design, along with their style system options for easy installation. 
+
+## Usage
+
+- AEM 6.5.0
+- Installation
+    - `mvn clean install -PautoInstallSinglePackage`
+        - While testing, there have been times when the ui.apps project doesn't get properly built installed while using the `mvn clean install -PautoInstallSinglePackage` build profile.
+        - If this happens run the `mvn clean install -PautoInstallPackage` profile from ui.apps, then the clientlibs get run through properly.
+- Install content package using the package manager
 
 ## Modules
 
